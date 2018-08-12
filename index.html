@@ -2,20 +2,54 @@
 <html>
 <head>
 <title>WEB1 - html</title>
-<meta charset'"utf-8">
+<meta charset="utf-8">
 </head>
+
 <body>
   <h1><a href="index.html">WEB</a></h1>
 <ol>
-  <li><a href="1.html" target="_blank">1.HTML</a></li>
+  <li><a href="1.html" target="_blank">HTML</a></li>
   <li><a href="2.html" target="_blank">CSS</a></li>
   <li><a href="3.html" target="_blank">JavaScript</a></li>
+  <li><a href="4.html" target="_blank">bitnami</a></li>
 </ol>
 
+<!--첫 번째 본문-->
 <h2>HTML이란 무엇인가?</h2>
 <p>안녕 <strong>아톰</strong> 입문하였어요. 옛날에 배웠던 html 태그들이 이제 다시 써먹어질 줄이야...ㅎㅎ 반갑네용. 문장이 길어야 띄어지는지 테스트가 가능할텐데요.... ^^야호 됐어!</p>
-<p style="margin-top:20px;"">이미지를 넣어보자. 속성이 필요한 태그는 속성이 없으면 사용 불가.</p>
-<img src="image1.jpg" width="700">
+<p style="margin-top:20px;">이미지를 넣어보자. 속성이 필요한 태그는 속성이 없으면 사용 불가.</p>
+<img src="image1.jpg" width="800px"><br>
+
+<!--두 번째 본문(유튜브 동영상 삽입)-->
+<p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jiJ5hNAxIDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</p>
+
+<!--세 번째 본문(댓글 기능 삽입)-->
+<p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web1-xkh7yyeqgk.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+
+<!--결론-->
 <p style="margin-top:50px;"><a href="http://www.naver.com" target="_blank" title="html5 specification">다음 시간에 만나용!</p>
 </body>
 </html>
